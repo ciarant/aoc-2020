@@ -17,7 +17,6 @@ class Day01Test {
         fun `Matches example`() {
             val (first, second) = Day01(exampleInputs).solvePart1(2020)
             val product = exampleInputs[first] * exampleInputs[second]
-            println("Hello")
             assertEquals(514_579, product)
         }
 
