@@ -3,6 +3,9 @@ import java.net.URI
 
 // h/t https://github.com/tginsberg/advent-2019-kotlin
 internal object Resources {
+    fun resourceAsString(fileName: String): String =
+        File(fileName.toURI()).readText()
+
     fun resourceAsList(fileName: String): List<String> =
         File(fileName.toURI()).readLines()
 
