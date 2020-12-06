@@ -8,7 +8,7 @@ class Day05(private val tickets: List<String>) {
 
     fun solvePart2(): Int {
         tickets.map { seatId(it) }.sorted().zipWithNext { a, b -> if (a + 1 < b) return a + 1 }
-        return -1 // FIXME magic number
+        throw IllegalArgumentException("No soluton") // TODO is this idiomatic?
     }
 
     private fun seatId(ticket: String): Int = decodePartialTicket(ticket.substring(0..6)) * 8 +

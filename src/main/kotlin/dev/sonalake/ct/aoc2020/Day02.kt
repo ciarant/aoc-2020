@@ -1,7 +1,9 @@
 package dev.sonalake.ct.aoc2020
 
 class Day02 {
-    private val pattern = Regex("""(\d*)-(\d*) ([a-z]): (.*)""")
+    companion object {
+        private val pattern = Regex("""(\d*)-(\d*) ([a-z]): (.*)""")
+    }
 
     fun solvePart1(input: List<String>): Int {
         return toPasswordEntryList(input).count { it.isValid1() }
