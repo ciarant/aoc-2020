@@ -48,11 +48,15 @@ class Day06Test {
 
         @Test
         fun `Matches example`() {
+            val count = Day06(exampleInput).solvePart2()
+            assertEquals(6, count)
         }
-        
+
         @Test
         fun `Actual answer`() {
+            val input = Resources.resourceAsString("day06.txt")
+            val count = Day06(input).solvePart2()
+            assertEquals(3351, count)
         }
     }
-
 }
