@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
+@DisplayName("Day 6")
 class Day06Test {
     val exampleInput = """
         abc
