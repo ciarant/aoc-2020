@@ -42,10 +42,15 @@ class Day08Test {
 
         @Test
         fun `Matches example`() {
+            val acc = Day08(exampleInput).solvePart2()
+            assertEquals(8, acc)
         }
 
         @Test
         fun `Actual answer`() {
+            val input = Resources.resourceAsList("day08.txt")
+            val acc = Day08(input).solvePart2()
+            assertEquals(1543, acc)
         }
     }
 }
